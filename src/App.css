@@ -12,12 +12,12 @@ html{
 
 @media(max-width:768px){
   html{
-    font-size: 45%;
+    font-size: 42%;
   }
 }
 
 @media(max-width:450px){
   html{
-    font-size: 35%;
+    font-size: 32%;
   }
 }
