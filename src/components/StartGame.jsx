@@ -11,7 +11,7 @@ const StartGame = ({ toggle }) => {
         </div>
         <div className="content">
           <h1>Dice Game</h1>
-          <Button onClick={toggle}>Play Now</Button>
+          <Button className="button" onClick={toggle}>Play Now</Button>
         </div>
       </div>
     </Container>
@@ -32,11 +32,5 @@ const Container = styled.div`
   .content h1 {
     font-size: 9.6rem;
     white-space: nowrap;
-  }
-
-  @media (max-width: 768px) {
-    html {
-      font-size: 42%;
-    }
   }
 `;

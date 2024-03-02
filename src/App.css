@@ -10,9 +10,21 @@ html{
   font-size: 62.5%;
 }
 
-@media(max-width:768px){
+@media(min-width: 768px) {
   html{
-    font-size: 42%;
+    font-size: 45%;
+  }
+  img{
+    max-width: 90rem;
+  }
+  .front{
+    padding-top: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button{
+    font-size: 22rem;
   }
 }
 
@@ -21,12 +33,34 @@ html{
     font-size: 32%;
   }
   img{
-    max-width: 80rem;
+    max-width: 70rem;
   }
   .front{
-    padding-top: 40rem;
+    padding-top: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .button{
+    font-size: 12rem;
+  }
 }
+
+@media(min-width: 900px) {
+  html{
+    font-size: 45%;
+  }
+  img{
+    max-width: 95rem;
+  }
+  .front{
+    padding-top: 42rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button{
+    font-size: 25rem;
+  }
+}
+
