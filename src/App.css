@@ -10,7 +10,7 @@ html{
   font-size: 62.5%;
 }
 
-@media(min-width: 768px) {
+@media only screen and (max-width: 950px) and (min-width: 768px)  {
   html{
     font-size: 45%;
   }
@@ -28,7 +28,7 @@ html{
   }
 }
 
-@media(max-width: 450px) {
+@media only screen and (max-width: 550px) and (min-width: 280px) {
   html {
     font-size: 32%;
   }
@@ -43,24 +43,6 @@ html{
   }
   .button{
     font-size: 12rem;
-  }
-}
-
-@media(min-width: 900px) {
-  html{
-    font-size: 45%;
-  }
-  img{
-    max-width: 95rem;
-  }
-  .front{
-    padding-top: 42rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .button{
-    font-size: 25rem;
   }
 }
 
