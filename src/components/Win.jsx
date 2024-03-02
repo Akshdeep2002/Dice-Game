@@ -3,13 +3,11 @@ import "../App.css";
 
 const Win = () => {
 
-  let song=<audio src="../audio/Winning_music.wav"></audio>
   return (
     <WinContainer>
       <div>
-        {song}
         <img src="../images/Winner.jpg" alt="" />
-        Congratulations ! You are the dice king !!!
+        <p>Congratulations ! You are the dice king !!!</p>
       </div>
     </WinContainer>
   );
@@ -20,6 +18,10 @@ export default Win;
 const WinContainer = styled.div`
   font-size: 2.4rem;
   font-weight: 700;
+
+  p{
+    display: flex;
+  }
 
   img {
     height: 10rem;

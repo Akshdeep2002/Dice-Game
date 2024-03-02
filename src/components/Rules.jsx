@@ -13,6 +13,7 @@ const Rules = () => {
           thrice of the selected number as points
         </p>
         <p>If it is unmatched then, 2 points will be deducted</p>
+        <p>If you manage to get more than 10 points , then , you become the dice king</p>
       </div>
     </RulesContainer>
   );
