@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../App.css";
 
 const Rules = () => {
   return (
@@ -20,20 +21,21 @@ const Rules = () => {
 export default Rules;
 
 const RulesContainer = styled.div`
-  max-width: 800px;
+  max-width: 80rem;
   margin: 0 auto;
   background-color: #fbf1f1;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: .8rem;
+  margin-bottom: 2rem;
 
   h2 {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   .text {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 `;

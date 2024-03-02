@@ -6,21 +6,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width:600px){
-  .top_section {
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-    width: 20px;
+html{
+  font-size: 62.5%;
+}
+
+@media(max-width:768px){
+  html{
+    font-size: 45%;
   }
-    
-.btns {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      width: 50px;
-    }
+}
+
+@media(max-width:450px){
+  html{
+    font-size: 35%;
+  }
 }

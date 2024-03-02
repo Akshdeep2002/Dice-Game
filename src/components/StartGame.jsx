@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../styled/Buttons";
+import "../App.css";
 
 const StartGame = ({ toggle }) => {
   return (
@@ -18,14 +19,14 @@ const StartGame = ({ toggle }) => {
 export default StartGame;
 
 const Container = styled.div`
-  max-width: 1180px;
+  max-width: 118rem;
   height: 100vh;
   display: flex;
   margin: 0 auto;
   align-items: center;
 
   .content h1 {
-    font-size: 96px;
+    font-size: 9.6rem;
     white-space: nowrap;
   }
 `;

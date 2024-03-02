@@ -5,13 +5,15 @@ import TotalScore from "./TotalScore";
 import styled from "styled-components";
 import { Button } from "../styled/Buttons";
 import Rules from "./Rules";
+import Win from "./Win";
+import "../App.css";
 
 const GamePlay = () => {
   const [score, setScore] = useState(0);
   const [selectedNumber, setSelectedNumber] = useState();
   const [currentDice, setCurrentDice] = useState(1);
   const [error, setError] = useState("");
-  const [showRules, setShowRules]=useState(false);
+  const [showRules, setShowRules] = useState(false);
 
   const generateRandomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
@@ -44,17 +46,23 @@ const GamePlay = () => {
     <MainContainer>
       <div className="top_section">
         <TotalScore score={score} />
-        <NumberSelector
-          error={error}
-          setError={setError}
-          selectedNumber={selectedNumber}
-          setSelectedNumber={setSelectedNumber}
-        />
+        {score >= 3 ? (
+          <Win />
+        ) : (
+          <NumberSelector
+            error={error}
+            setError={setError}
+            selectedNumber={selectedNumber}
+            setSelectedNumber={setSelectedNumber}
+          />
+        )}
       </div>
       <RollDice currentDice={currentDice} rollDice={rollDice} />
       <div className="btns">
         <Button onClick={resetScore}>Reset score</Button>
-        <Button onClick={()=>setShowRules((prev)=>!prev)}>{showRules ? "Hide" : "Show"} Rules</Button>
+        <Button onClick={() => setShowRules((prev) => !prev)}>
+          {showRules ? "Hide" : "Show"} Rules
+        </Button>
       </div>
       {showRules && <Rules />}
     </MainContainer>
@@ -64,7 +72,7 @@ const GamePlay = () => {
 export default GamePlay;
 
 const MainContainer = styled.main`
-  padding-top: 15px;
+  padding-top: 1.5rem;
   .top_section {
     display: flex;
     justify-content: space-around;
@@ -72,11 +80,11 @@ const MainContainer = styled.main`
   }
 
   .btns {
-    margin-top: 10px;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
   }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../App.css";
 
 const RollDice = ({ rollDice, currentDice }) => {
   
@@ -16,7 +17,7 @@ const RollDice = ({ rollDice, currentDice }) => {
 export default RollDice;
 
 const DiceContainer = styled.div`
-  margin-top: 15px;
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +27,6 @@ const DiceContainer = styled.div`
   }
 
   p {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 `;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import "../App.css";
 
 const NumberSelector = ({
   setError,
@@ -38,11 +39,11 @@ export default NumberSelector;
 const NumberSelectorContainer = styled.div`
   .flex {
     display: flex;
-    gap: 24px;
+    gap: 2.4rem;
   }
   p {
-    font-size: 24px;
-    font-weight: 700px;
+    font-size: 2.4rem;
+    font-weight: 700;
   }
   .error {
     color: red;
@@ -50,12 +51,12 @@ const NumberSelectorContainer = styled.div`
 `;
 
 const Box = styled.div`
-  height: 72px;
-  width: 72px;
-  border: 2px solid black;
+  height: 7.2rem;
+  width: 7.2rem;
+  border: 0.2rem solid black;
   display: grid;
   place-items: center;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   background-color: ${(props) => (props.isSelected ? "black" : "white")};
   color: ${(props) => (!props.isSelected ? "black" : "white")};

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../App.css";
 
 const TotalScore = ({score}) => {
   return (
@@ -12,14 +13,15 @@ const TotalScore = ({score}) => {
 export default TotalScore;
 
 const ScoreContainer = styled.div`
-  max-width: 200px;
+  max-width: 20rem;
   text-align: center;
   h1 {
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 10rem;
+    line-height: 10rem;
   }
   p {
-    font-size: 24px;
-    font-weight: 500px;
+    font-size: 2.4rem;
+    font-weight: 50rem
+    ;
   }
 `;
