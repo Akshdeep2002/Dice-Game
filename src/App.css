@@ -16,8 +16,17 @@ html{
   }
 }
 
-@media(max-width:450px){
-  html{
+@media(max-width: 450px) {
+  html {
     font-size: 32%;
+  }
+  img{
+    max-width: 80rem;
+  }
+  .front{
+    padding-top: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
